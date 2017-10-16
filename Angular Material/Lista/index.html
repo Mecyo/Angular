@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--<html >
+<head>
+  <meta charset="UTF-8">
+  <title>List Controls</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  
+  <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
+<link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+<!--
+<body>
+
+  <md-list ng-controller="ListCtrl" ng-cloak="" class="listdemoListControls" ng-app="MyApp">
+	
+	<md-toolbar class="md-hue-2">
+      <h2>
+          <span>Lista de Participantes</span>
+        </h2>
+	</md-toolbar>
+	<md-toolbar>
+      <div class="md-toolbar-tools">
+      <h2>
+	  <md-button aria-label="Go Back">
+          ID
+        </md-button>
+        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+          <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+        </md-button>
+        
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+          <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+	
+
+
+  <md-list-item ng-repeat="person in people" ng-click="goToPerson(person.name, $event)" class="noright">
+    <img alt="{{ person.name }}" ng-src="{{ person.img }}" class="md-avatar">
+    <p>{{ person.id }}</p>
+	<p>{{ person.name }}</p>
+	<p>{{ person.email }}</p>
+    <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+    <md-icon md-svg-icon="communication:email" ng-click="doSecondaryAction(person)" aria-label="Send Email" class="md-secondary md-hue-3"></md-icon>
+    <md-icon class="md-secondary" ng-click="doRatting($event)" aria-label="Chat" md-svg-icon="communication:message"></md-icon>
+  </md-list-item>
+</md-list>-->
+
+<!--
+
+<div ng-cloak>
+  <md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="one">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab One</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="two">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Two</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="three">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Three</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+-->
+
+
+html(lang='en',ng-app='StarterApp')
+  body(layout='column',ng-controller='AppCtrl')
+    .main-fab
+      md-button.md-fab.md-accent +
+    md-toolbar.md-tall(layout='column')
+      span(flex)
+      .md-toolbar-tools
+        .fill-height(layout='row',flex)
+          .md-toolbar-item.md-breadcrumb(ng-hide='toggleSearch')
+            span(ng-click='toggleSearch = !toggleSearch') Angular Material Table
+          span(flex,ng-hide='toggleSearch')
+          md-input-container(flex,style='padding-left:88px;',ng-show='toggleSearch')
+            input#searchinput(type='text',ng-model='search',show-focus="toggleSearch")
+          .md-toolbar-item.md-tools(layout='row')
+            a.md-button.md-default-theme(href='#', ng-click='toggleSearch = !toggleSearch')
+              i.ion-android-search
+    md-content(layout='column',flex,ng-click='toggleSearch=false')
+      md-table(headers="headers", content="content", sortable="sortable", filters="search", custom-class="custom", thumbs="thumbs", count="count")
+      
+// md-table jade template
+#md-table-template(ng-hide='true')
+  table.md-table(md-colresize)
+      thead
+          tr.md-table-headers-row
+              th.md-table-header(ng-repeat='h in headers')
+                  a(href='#',ng-if='handleSort(h.field)',ng-click='reverse=!reverse;order(h.field,reverse)') {{h.name}} 
+                      i.ion-android-arrow-dropup(ng-show='reverse && h.field == predicate')
+                      i.ion-android-arrow-dropdown(ng-show='!reverse && h.field == predicate')
+                  span(ng-if='!handleSort(h.field)') {{h.name}}
+              th.md-table-header
+      tbody
+          tr.md-table-content-row(ng-repeat='c in content | filter:filters | startFrom:tablePage*count | limitTo: count')
+              td
+                .md-table-thumbs(ng-repeat='h in headers',ng-if='h.field == thumbs')
+                  div(style="background-image:url({{c.thumb}})")
+              td.md-table-content(ng-repeat='h in headers',ng-class='customClass[h.field]',ng-if='h.field != thumbs') {{(h.field.indexOf('date') > 0) ? $filter('date')(c[h.field]) : c[h.field];}}
+              td.md-table-td-more
+                  md-button(aria-label='Info')
+                      i.ion-android-more-vertical
+  .md-table-footer(layout="row")
+      span.md-table-count-info Rows per page : 
+          a(href='#',ng-click='goToPage(0); count=10') 10
+          | ,
+          a(href='#',ng-click='goToPage(0); count=25') 25
+          | ,
+          a(href='#',ng-click='goToPage(0); count=50') 50
+          | ,
+          a(href='#',ng-click='goToPage(0); count=100') 100
+          | (current is {{count}})
+      span(flex)
+      span(ng-show='nbOfPages() > 1')
+          md-button.md-primary.md-hue-2(ng-disabled='tablePage==0',ng-click='tablePage=tablePage-1',aria-label='Previous Page')
+              i.ion-chevron-left(style="font-size:16px;")
+          a(href='#',ng-repeat='i in getNumber(nbOfPages()) track by $index')
+              md-button.md-primary.md-hue-2.md-table-footer-item(ng-click='goToPage($index)')
+                  span(ng-class="{ 'md-table-active-page': tablePage==$index}") {{$index+1}}
+          md-button.md-primary.md-hue-2(ng-disabled='tablePage==nbOfPages()-1',ng-click='tablePage=tablePage+1',aria-label='Next Page')
+              i.ion-chevron-right(style="font-size:16px;")
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js'></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
